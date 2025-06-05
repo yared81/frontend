@@ -1,18 +1,6 @@
-body {
-    font-family: 'Roboto', 'Segoe UI', Helvetica, Arial, sans-serif;
-    background-color: #e8f5e9;
-    margin: 0;
-    padding: 0 20px;  
-    min-height: 100vh;
-    color: #333;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;  
-}
-
 .container {
     background-color: #ffffff;
-    padding: 35px;
+    padding: 15px;
     border-radius: 0;
     width: 100%;
     box-sizing: border-box;
@@ -22,19 +10,36 @@ body {
 .site-header {
     text-align: left;
     margin-bottom: 40px;
+    padding-top: 0;
 }
 
 .site-header h1 {
-    color: #1a5276;
-    font-size: 3.5em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    color: #2c3e50;
+    font-size: 4.5em;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #3498db, #2ecc71, #3498db);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: shine 3s linear infinite;
+    position: relative;
+    padding: 0;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .site-header .tagline {
     font-size: 1.1em;
-    color: #52be80;
+    color: #2c3dd1;
     margin-top: 0;
     font-style: italic;
 }

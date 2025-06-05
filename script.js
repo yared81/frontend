@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTasks();
 
         if (taskNewlyCompleted) {
-            alert('Good job!');
+            alert('Good job for completing the task!');
         }
     }
 
